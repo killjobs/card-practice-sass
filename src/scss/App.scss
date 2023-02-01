@@ -1,0 +1,73 @@
+@import './Common.scss';
+
+.App{
+    @include media-up(sm){
+      display: block;
+    }
+    @include media-up(md){
+      display: flex;
+    }
+  }
+  
+.App__image{
+  background: url("../assets/images/bg-main-desktop.png") ;
+  background-size: cover;
+  @include media-up(sm){
+    @include element-size(100%,250px);  
+  }
+  @include media-up(md){
+    @include element-size(500px,100vh);
+  }
+}
+
+.App__form{
+  margin: 0 auto;
+  @include media-up(sm){
+    width: 100%;
+  }
+  @include media-up(md){
+    width: 800px;
+  }
+}
+  
+.dimension--tarjeta{
+  @include element-size(447px,245px);
+  border-radius: 10px;
+  color: $color-blanco;
+  position: absolute;
+  
+  @include media-up(sm){
+    scale: 0.70;
+  }
+
+  @include media-up(md){
+    scale: 1;
+  }
+
+  @include media-up(lg){
+    scale: 1;
+  }
+}
+
+.panel-formulario{
+  margin: 0 auto;
+  color: #220930;
+
+  @include media-up(sm){
+    margin-top: 80px;
+    width: 80%;
+  }
+
+  @include media-up(md){
+    margin-top: 180px;
+    width: 500px;
+  }
+}
+
+.button-select{
+  @include element-size(100%,50px);
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: $color-principal;
+  color: $color-blanco;
+}

@@ -1,0 +1,46 @@
+@import './Common.scss';
+
+  .cardForm {
+
+    input[type="text"]{
+      @include element-size(100%,30px);
+      border-radius: 3px;
+    }
+
+    div{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      input[type="text"]{
+        @include element-size(50px,30px);
+        border-radius: 3px;
+      }
+
+      div {
+        display: inline-block;
+        width: 50%;
+        p+div, 
+        div  {
+          width: 48%;
+        }
+        
+        input[type="text"]{
+          color: $color-principal;
+          @include element-size(70px,30px);
+          margin-right: 20px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }  
+  
+  .cvcStyle {
+    input[type="text"] {
+      width: 100% !important;
+    }
+  }
+  
+  .presentation-error{
+    display: block;
+    color: red;
+  }

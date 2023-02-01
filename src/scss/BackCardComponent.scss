@@ -1,0 +1,46 @@
+@import './Common.scss';
+
+  .lectora{
+    @include element-size(100% , 50px);
+    background-color: $color-gris-oscuro;
+  }
+  
+  .cardBack{
+    padding-top: 20px;
+    background-color: $color-gris-extra-claro;
+    font-family: 'Space Grotesk', sans-serif;
+    @include media-up(sm){
+      top: -15px;
+      left: 80px;
+    }
+    
+    @include media-up(md){
+      top: 380px;
+      left: 300px;
+    }
+  }
+  
+  .cvc-container{
+    @include element-size(80% , 37px);
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: $color-gris-claro;
+    span{
+      width: 95%;
+      display: block;
+      padding-top: 10px;
+      text-align: end;
+    }
+  }
+  
+  .linea-adicional{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 0.3;
+    color: $color-gris-claro;
+  }
