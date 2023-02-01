@@ -5,7 +5,7 @@ $color-blanco : hsl(0, 0%, 100%);
 $color-principal : #220930;
 $color-degrade : linear-gradient(144deg, rgba(99,63,240,1) 6%, rgba(108,48,219,1) 17%, rgba(97,19,172,1) 35%, rgba(176,99,206,1) 50%, rgba(91,142,232,1) 61%, rgba(227,116,109,1) 66%, rgba(106,40,168,1) 72%, rgba(97,9,153,1) 97%);
 $breakpoints: (
-    sm : 540px,
+    sm : 375px,
     md : 768px,
     lg : 1024px,
     xl : 1280px
